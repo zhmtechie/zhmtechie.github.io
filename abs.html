@@ -1,0 +1,98 @@
+
+<!-- saved from url=(0090)https://basics.sjtu.edu.cn/~chen/Events/2017NSFC-JSPS/?from=singlemessage&isappinstalled=0 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>
+Abstracts of Talks
+</title>
+  
+  <link type="text/css" href="./The 10th NSFC-JSPS Joint Workshop on Formal Methods_files/hu.css" rel="stylesheet">
+
+<!--<base href="http://basics.sjtu.edu.cn/~chen/.">--><base href=".">
+
+</head><body bgcolor="#F5F5DC" link="#0000F0" vlink="#000090" background="./The 10th NSFC-JSPS Joint Workshop on Formal Methods_files/back.jpg">
+
+<style>
+BODY {COLOR: BLACK; FONT-FAMILY: "Georgia", Times, serif}
+
+H1 {COLOR: BLACK; FONT-FAMILY: "Georgia", Times, serif}
+
+P {COLOR: BLACK; FONT-FAMILY: "Georgia", Times, serif}
+a {text-decoration:none}
+</style>
+
+
+
+
+<h1>Abstracts</h1>
+
+<hr>
+<p style="width: 800px" align="left"><a name="YuxiFu" id="ogawa"></a><strong>Title</strong>: Model checking event clock automata (Mizuhito Ogawa)<br>
+<strong>Abstract</strong>: Model checking event clock automata has been an open problem, even for discrete CTL. The difficulty lies the failure of the finite region construction for event clock automata, contrary to what widely believed, We investigate how the well quasi ordering techniques work for the problem. </p>
+<hr>
+<p style="width: 800px" align="left"><a name="YuxiFu" id="YuxiFu"></a><strong>Title</strong>: TBA (Yuxi Fu)<br>
+<strong>Abstract</strong>: TBA</p>
+<hr>
+<p style="width: 800px" align="left"><a name="YuxiFu" id="seki"></a><strong>Title</strong>: Generalized Register Context-Free Grammar (Hiroyuki Seki)<br>
+<strong>Abstract</strong>: Register context-free grammar (RCFG) was defined by Cheng and Kaminsky
+ as an extension of context-free grammar to handle data values.
+ We introduce generalized RCFG (GRCFG) by permitting an arbitrary
+ relation on data values in the guard of a production rule.
+ We then show some properties of GRCFG such as epsilon-rule removability
+ and the decidability of emptiness and membership for GRCFG that have
+ simulation property and type oracle. Lastly, we mention the relation
+ between GRCFG and Nominal CFG of Bojanczyk.
+ This is a joint work with Ryoma Senda and Yoshiaki Takata.</p>
+<hr>
+<p style="width: 800px" align="left"><a name="YuxiFu" id="terauchi"></a><strong>Title</strong>: A formal analysis of timing channel security via bucketing (Tachio Terauchi)<br>
+<strong>Abstract</strong>: Bucketing is a technique proposed to mitigate timing channel attacks by restricting a system's outputs to only occur at designated time intervals. Bucketing has the effect of reducing the possible timing channel observations to a small number of possibilities. In this paper, we present an approach to formally prove the security of systems under the bucketing technique. First, we show that bucketing alone is insufficient to ensure security against adversaries who can make multiple side channel observations. Then, we present a condition sufficient to guarantee a system's security against adaptive side-channel-observing adversaries. Roughly, the condition says that there exists a large enough subset of secrets on which the system's side channel reveals no more information than that revealed by its regular channel and that the regular channel is secure to a certain degree on the subset. We also present a condition which guarantees that the system would satisfy the first condition when bucketing is applied. This second condition says that the system's side-channel outputs are independent of attacker-controlled inputs (but can depend on secrets) and that the regular channel is secure to a certain degree. We show that the two conditions facilitate proving security of systems under adaptive side-channel attacks by separating the concerns of regular-channel security from side-channel information leakage. Further, we show that the bucketing technique can be applied compositionally in conjunction with the constant-time-implementation technique to increase their applicability. While we instantiate our contributions to timing channel and bucketing, many of them are actually quite general and are applicable to any side channels and techniques that reduce the number of possible observations on the channel.
+</p>
+<hr>
+<p style="width: 800px" align="left"><a name="YuxiFu" id="nakazawa"></a><strong>Title</strong>: On Cut Elimination in Cyclic Proof Systems for Separation Logic (Koji Nakazawa)<br>
+<strong>Abstract</strong>: We prove impossibility of the cut elimination in the cyclic proof
+system for the separation logic with general inductive predicates.
+We expect that the proof idea can be extended to other cyclic proof
+systems for the logic of bunched implication and the first-order logic.</p>
+<hr>
+<p style="width: 800px" align="left"><a name="YuxiFu" id="xinli"></a><strong>Title</strong>: TBA (Xin Li)<br>
+<strong>Abstract</strong>: TBA</p>
+<hr>
+<p style="width: 800px" align="left"><a name="YuxiFu" id="yuen"></a><strong>Title</strong>: Reversing Parallel Programs with Blocks and Procedures (Shoji Yuen)<br>
+<strong>Abstract</strong>: We show how to reverse a while language extended with blocks, local variables, procedures and the
+interleaving parallel composition. Annotation is defined along with a set of operational semantics
+capable of storing necessary reversal information, and identifiers are introduced to capture the interleaving
+order of an execution. Inversion is defined with a set of operational semantics that use
+saved information to undo an execution. We prove that annotation does not alter the behaviour of the
+original program, and that inversion correctly restores the initial program state.<br>
+(Joint work with: James Hoey and Irek Ulidowski)</p>
+<hr>
+<p style="width: 800px" align="left"><a name="YuxiFu" id="song"></a><strong>Title</strong>: Verifying and Quantifying Side-Channel Resistance of Masked Software Implementations.   (Fu Song) <br>
+<strong>Abstract</strong>: Power side-channel attacks, capable of deducing secret data using statistical analysis, have become a serious
+threat. Random masking is a widely used countermeasure for removing the statistical dependence between
+secret data and side-channel information. Although there are techniques for verifying whether a software
+has been perfectly masked, they are limited in accuracy and scalability. To bridge this gap, we propose a
+refinement-based method for verifying masking. Our method is more accurate than prior type inference based
+approaches and more scalable than prior model-counting based approaches using SAT or SMT solvers. Indeed,
+our approach can be viewed as a gradual refinement of a set of type inference rules for reasoning about
+distribution types. These rules are kept abstract initially to allow fast deduction, and then made concrete when
+the abstract version is not able to resolve the verification problem. We also propose algorithms for quantifying
+the amount of information leakage from a software implementation through side channels using the notion of
+Quantitative Masking Strength. We have implemented our method in a tool and evaluated it on cryptographic
+benchmarks including AES and MAC-Keccak. The experimental results show that our method significantly
+outperforms state-of-the-art techniques in terms of both accuracy and scalability.</p>
+<hr>
+<p style="width: 800px" align="left"><a name="YuxiFu" id="deng"></a><strong>Title</strong>: On Divergence-Sensitive Weak Probabilistic Bisimilarity (Kangli He) <br>
+<strong>Abstract</strong>: Weak probabilistic bisimilarity is a well-established notion to equate concurrent probabilistic systems that behave observably equivalent, up to the matching of internal computation steps. This notion can be pivotal in the model checking of large probabilistic systems, because the considered model can be replaced by an equivalent, but possibly much smaller one prior to model checking. The conventional work has thus far considered weak probabilistic bisimilarity while ignoring the presence or absence of divergent behavior (interpreted as inﬁnite internal computations). However, we argue that divergence can have a remarkable inﬂuence on the equivalence of two concurrent probabilistic systems. We thus explore divergence-sensitive reﬁnements of weak probabilistic bisimilarity. We work in the setting of probabilistic automata, and study the consistent feasible veriﬁcation method for the notion of divergence-sensitivity that discriminates presence and absence of divergence in otherwise bisimilar states. We furthermore present a novel polynomial-time algorithm to compute divergence-sensitive bisimilarity. It intertwines partition-reﬁnement and inductive veriﬁcation steps in a highly non-trivial manner.</p>
+<hr>
+<p style="width: 800px" align="left"><a name="YuxiFu" id="gardy"></a><strong>Title</strong>: TBA (Patrick Gardy)<br>
+<strong>Abstract</strong>: TBA</p>
+<hr>
+<p style="width: 800px" align="left"><a name="YuxiFu" id="chen"></a><strong>Title</strong>: TBA (Yijia Chen)<br>
+<strong>Abstract</strong>: TBA</p>
+<hr>
+<p style="width: 800px" align="left"><a name="YuxiFu" id="hongfei"></a><strong>Title</strong>: Qsimulation: A Tool for Simulating Quantum Computation (Xi Deng)<br>
+<strong>Abstract</strong>: We introduce Qsimulation - a tool for simulating quantum computation on classical computers. The tool is composed of four main ingredients: an imperative quantum programming language, an interpreter of the language, a graphic user interface for simulating the execution of quantum programs and error handling module. It is intended to be used by instructors and novices to design and test simple quantum programs and circuits.</p>
+<hr>
+
+
+
+</body></html>
