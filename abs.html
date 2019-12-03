@@ -32,16 +32,20 @@ a {text-decoration:none}
 <p style="width: 800px" align="left"><a name="YuxiFu" id="YuxiFu"></a><strong>Title</strong>: The Quantitative Aspect of Process (Yuxi Fu)<br>
 <strong>Abstract</strong>: We take a look at the quantitative aspect of processes by investigating how to count finite nondeterministic computations.</p>
 <hr>
-<p style="width: 800px" align="left"><a name="YuxiFu" id="seki"></a><strong>Title</strong>: Generalized Register Context-Free Grammar (Hiroyuki Seki)<br>
-<strong>Abstract</strong>: Register context-free grammar (RCFG) was defined by Cheng and Kaminsky
- as an extension of context-free grammar to handle data values.
- We introduce generalized RCFG (GRCFG) by permitting an arbitrary
- relation on data values in the guard of a production rule.
- We then show some properties of GRCFG such as epsilon-rule removability
- and the decidability of emptiness and membership for GRCFG that have
- simulation property and type oracle. Lastly, we mention the relation
- between GRCFG and Nominal CFG of Bojanczyk.
- This is a joint work with Ryoma Senda and Yoshiaki Takata.</p>
+<p style="width: 800px" align="left"><a name="YuxiFu" id="seki"></a><strong>Title</strong>: Regularity Preservation Property of Register Pushdown Systems (Hiroyuki Seki)<br>
+<strong>Abstract</strong>: Pushdown system (PDS) is an infinite-state model for recursive schema and 
+PDS preserves regularity, where a transformation T is said to preserve regularity 
+if T(L) is always regular for any regular language L. 
+Register pushdown system (RPDS) is an extension of PDS by adding the capability 
+of manipulating data values in a restricted way.  Murawski et al. showed that 
+every RPDS has backward (pre*) regularity preservation property. Note that
+we say that a data language L is regular if L is recognized by a register automaton. 
+In this talk, we first propose an alternative definition of RPDS by using equivalence 
+relation between registers. Then, it is shown that every RPDS has both backward 
+and forward (post*) regularity preservation property.  Also, we discuss an application 
+of these preservation results to RPDS model checking problems. 
+<br>
+This is a joint work with Ryoma Senda and Yoshiaki Takata. </p>
 <hr>
 <p style="width: 800px" align="left"><a name="YuxiFu" id="terauchi"></a><strong>Title</strong>: A formal analysis of timing channel security via bucketing (Tachio Terauchi)<br>
 <strong>Abstract</strong>: Bucketing is a technique proposed to mitigate timing channel attacks by restricting a system's outputs to only occur at designated time intervals. Bucketing has the effect of reducing the possible timing channel observations to a small number of possibilities. In this paper, we present an approach to formally prove the security of systems under the bucketing technique. First, we show that bucketing alone is insufficient to ensure security against adversaries who can make multiple side channel observations. Then, we present a condition sufficient to guarantee a system's security against adaptive side-channel-observing adversaries. Roughly, the condition says that there exists a large enough subset of secrets on which the system's side channel reveals no more information than that revealed by its regular channel and that the regular channel is secure to a certain degree on the subset. We also present a condition which guarantees that the system would satisfy the first condition when bucketing is applied. This second condition says that the system's side-channel outputs are independent of attacker-controlled inputs (but can depend on secrets) and that the regular channel is secure to a certain degree. We show that the two conditions facilitate proving security of systems under adaptive side-channel attacks by separating the concerns of regular-channel security from side-channel information leakage. Further, we show that the bucketing technique can be applied compositionally in conjunction with the constant-time-implementation technique to increase their applicability. While we instantiate our contributions to timing channel and bucketing, many of them are actually quite general and are applicable to any side channels and techniques that reduce the number of possible observations on the channel.
