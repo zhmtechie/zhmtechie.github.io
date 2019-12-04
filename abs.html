@@ -1,6 +1,6 @@
 
 <!-- saved from url=(0090)https://basics.sjtu.edu.cn/~chen/Events/2017NSFC-JSPS/?from=singlemessage&isappinstalled=0 -->
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>
 Abstracts of Talks
 </title>
@@ -98,28 +98,23 @@ shapes imperfect information takes in multi-agents systems, some well-known (par
 will present recent algorithm developments and new complexity results.
 </p>
 <hr>
-<p style="width: 800px" align="left"><a name="YuxiFu" id="chen"></a><strong>Title</strong>: The Complexity of Homomorphism Counts - A Preliminary Report (Yijia Chen)<br>
-<strong>Abstract</strong>: In 1967 Lovasz proved that two graphs G and H are isomorphic if and only if
-for any (pattern) graph F the number of homomorphisms HOM(F,G) from F to G is
-equal to the number of homomorphism HOM(F,H) from F to H. Thus any graph G
-can be characterized by the homomorphism vector (HOM(F,G))_F up to
-isomorphisms. By restricting pattern graphs F to a given graph class K, e.g.,
-trees, planar graphs, bounded-degree graphs, the restricted homomorphism
-vector (HOM(F,G))_{F\in K} might offer a meaningful way to measure the
-similarly of graphs. For instance, it is shown recently [Dell, Grohe, and
-Ratten, 2018] that<br><br>
-
-(*) (HOM(F,G))_{F a tree}= (HOM(F,H))_{F a tree}
+<p style="width: 800px" align="left"><a name="YuxiFu" id="chen"></a><strong>Title</strong>: Łoś and Tarski meet Lovász (Yijia Chen)<br>
+<strong>Abstract</strong>: The Łoś–Tarski preservation theorem states that any FO-definable property which is closed under induced substructures can be defined by a universal FO-sentence. We show that this theorem can give a pure logic proof of the following result due to Lovász.
 <br><br>
-if and only if H and G cannot be distinguished by the color-refinement
-algorithm, a well-known heuristic for the graph isomorphism problem.<br><br>
+For every constant k, there exists a finite sequence of graphs H_1, \ldots, H_{m_k} such that for any graph G<br><br>
 
-Given a class K of graphs, a natural problem is to decide whether (*) holds
-for two input graphs G and H. So far this question has not been
-systematically investigated.
+G has a vertex cover of size at most k iff no H_i is an (induced) subgraph of G.
+<br><br>
 
-In this talk I will explain the background of this problem and known results,
-and report some of our preliminary findings.
+This might be surprising since<br><br>
+
+1. the Łoś–Tarski preservation theorem famously fails on finite structures, hence fails on graphs,<br>
+
+2. Lovász's result (and also his proof) is purely combinatorial.
+<br><br>
+Our key observation is that the above graph-theoretic problem can be easily generalized to infinite graphs. I will explain a few other results we've obtained using such a strategy. Among others, we apply Craig's interpolation theorem to show the collapse of monadic second-order logic to FO on graphs of bounded shrub-depth.
+<br><br>
+This is joint work with Jörg Flum.
 </p>
 <hr>
 <p style="width: 800px" align="left"><a name="YuxiFu" id="hongfei"></a><strong>Title</strong>: Qsimulation: A Tool for Simulating Quantum Computation (Xi Deng)<br>
