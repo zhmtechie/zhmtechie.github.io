@@ -28,6 +28,8 @@ a {text-decoration:none}
 <hr>
 <p style="width: 800px" align="left"><a name="YuxiFu" id="ogawa"></a><strong>Title</strong>: Model checking event clock automata (Mizuhito Ogawa)<br>
 <strong>Abstract</strong>: Model checking event clock automata has been an open problem, even for discrete CTL. The difficulty lies the failure of the finite region construction for event clock automata, contrary to what widely believed, We investigate how the well quasi ordering techniques work for the problem. </p>
+
+
 <hr>
 <p style="width: 800px" align="left"><a name="YuxiFu" id="YuxiFu"></a><strong>Title</strong>: Reaching to the Top of the Tower (Yuxi Fu)<br>
 <strong>Abstract</strong>: We will talk about a new complexity upper bound (much better than the one you heard me talking about last time in Japan) on the VASS reachability problem.</p>
@@ -87,6 +89,44 @@ outperforms state-of-the-art techniques in terms of both accuracy and scalabilit
 <hr>
 <p style="width: 800px" align="left"><a name="YuxiFu" id="deng"></a><strong>Title</strong>: On Divergence-Sensitive Weak Probabilistic Bisimilarity (Kangli He) <br>
 <strong>Abstract</strong>: Weak probabilistic bisimilarity is a well-established notion to equate concurrent probabilistic systems that behave observably equivalent, up to the matching of internal computation steps. This notion can be pivotal in the model checking of large probabilistic systems, because the considered model can be replaced by an equivalent, but possibly much smaller one prior to model checking. The conventional work has thus far considered weak probabilistic bisimilarity while ignoring the presence or absence of divergent behavior (interpreted as inﬁnite internal computations). However, we argue that divergence can have a remarkable inﬂuence on the equivalence of two concurrent probabilistic systems. We thus explore divergence-sensitive reﬁnements of weak probabilistic bisimilarity. We work in the setting of probabilistic automata, and study the consistent feasible veriﬁcation method for the notion of divergence-sensitivity that discriminates presence and absence of divergence in otherwise bisimilar states. We furthermore present a novel polynomial-time algorithm to compute divergence-sensitive bisimilarity. It intertwines partition-reﬁnement and inductive veriﬁcation steps in a highly non-trivial manner.</p>
+
+
+<hr>
+<p style="width: 800px" align="left"><a name="YuxiFu" id="imgai"></a><strong>Title</strong>: Fully Static Multiparty Session Programming with Global
+Protocol Combinators
+ (Keigo Imai)<br>
+<strong>Abstract</strong>: Multiparty Session Types (MPST) is a typing discipline for
+communication protocols. It ensures the absence of communication
+errors and deadlocks for well-typed communicating processes. Current
+implementations of the MPST theory rely on (1) runtime linearity
+checks to ensure correct usage of communication channels and (2)
+external domain specific languages for specifying and verifying of
+multiparty protocols.
+<br><br>
+To overcome these limitations, we propose a library for programming
+with global combinators -- a set of functions for writing and
+verifying multiparty protocols in OCaml.  Local behaviours for all
+processes in a protocol are inferred at once from a global combinator.
+We formalise our implementation in MiO, a minimal session-based
+functional language, and prove that MiO is type-safe.  Our approach
+enables fully-static verification and implementation of the whole
+protocol, from the protocol specification to the process
+implementations, to happen in the same language.
+<br><br>
+We compare our implementation to untyped and continuation-passing
+style implementations, and demonstrate its expressiveness by
+implementing a plethora of protocols. We show our library can
+interoperate with existing libraries and services, implementing DNS
+(Domain Name Service) protocol and the OAuth (Open Authentication)
+protocol.
+<br><br>
+This is joint work with Rumyana Neykova (Brunel University London, UK)
+and Nobuko Yoshida (Imperial College London, UK).
+
+ </p>
+
+
+
 <hr>
 <p style="width: 800px" align="left"><a name="YuxiFu" id="gardy"></a><strong>Title</strong>:  Incomplete
 information in multi-execution properties for multi-agent systems
