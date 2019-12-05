@@ -53,11 +53,31 @@ This is a joint work with Ryoma Senda and Yoshiaki Takata. </p>
 <strong>Abstract</strong>: We present a new algorithm for deciding the satisfiability of SMT formulas containing quantifiers.  We build our algorithm on the recent approach proposed by Farzan and Kincaid that reduces the problem to synthesizing a winning strategy to a certain perfect-information two-player game.  We show that their approach (as well as similar approaches used in Z3 and CVC4) can be inefficient incurring exponentially many strategy synthesis iterations even on simple examples having linear-size winning strategies.  Then, we present a new strategy synthesis approach that is able to efficiently solve such instances by quickly converging to simple winning strategies. (This is a work-in-progress work.)
 </p>
 <hr>
-<p style="width: 800px" align="left"><a name="YuxiFu" id="nakazawa"></a><strong>Title</strong>: On Cut Elimination in Cyclic Proof Systems for Separation Logic (Koji Nakazawa)<br>
-<strong>Abstract</strong>: We prove impossibility of the cut elimination in the cyclic proof
-system for the separation logic with general inductive predicates.
-We expect that the proof idea can be extended to other cyclic proof
-systems for the logic of bunched implication and the first-order logic.</p>
+<p style="width: 800px" align="left"><a name="YuxiFu" id="nakazawa"></a><strong>Title</strong>: Proof normalization for classical truth-table natural deduction (Koji Nakazawa)<br>
+<strong>Abstract</strong>: Geuvers et al. proposed a framework in which we can induce
+natural-deduction-style
+inference rules for general logical connectives from their truth
+tables. They also defined
+the proof normalization for intuitionistic variant of the truth-table
+natural deduction (TTND)
+and van der Giessen proved the subformula property and the strong
+normalization, which are
+important properties deriving consistency and conservativeness.
+However, for Geuvers'
+original definition of classical variant of TTND, it seems hard to
+define the proof normalization
+with good properties. In this talk, we proposed another classical
+variant of TTND, which is an
+extension of the intuitionistic TTND with multiple conclusion
+sequents, and in which we can
+easily get the notion of proof normalization along the idea of
+Parigot's lambda-mu calculus.
+We also prove the subformula property and strong normalization of the
+proof normalization
+in classical TTND. 
+<br>
+<br>
+This is a joint work with Kosuke Fukui and Saori Ishii.</p>
 <hr>
 <p style="width: 800px" align="left"><a name="YuxiFu" id="xudong"></a><strong>Title</strong>:  Verifying Quantum Communication Protocols with Ground Bisimulation (Xudong Qin)<br>
 <strong>Abstract</strong>: One important application of quantum process algebras is to formally verify quantum communication protocols. With a suitable notion of behavioural equivalence and a decision method, one can determine if an implementation of a protocol is consistent with its specification. Ground bisimulation is a convenient behavioural equivalence for quantum processes because of its associated coinduction proof technique. We exploit this technique to design and implement two on-the-fly algorithms for  the strong and weak versions of ground bisimulation to check if two given processes in quantum CCS are equivalent. We then develop a tool that can verify interesting quantum protocols such as the BB84 quantum key distribution scheme. </p>
