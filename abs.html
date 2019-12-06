@@ -148,14 +148,26 @@ and Nobuko Yoshida (Imperial College London, UK).
 
 
 <hr>
-<p style="width: 800px" align="left"><a name="YuxiFu" id="gardy"></a><strong>Title</strong>:  Incomplete
-information in multi-execution properties for multi-agent systems
- (Patrick Gardy)<br>
-<strong>Abstract</strong>:  Imperfect information is a well known and well studied subject of software
-verification. In closed systems (systems independent of their environments) there have been many results. When moving to open systems (reacting to their environments), the situation changes
-drastically and imperfect information greatly complexify the results. In particular, the model-checking of many models rises in complexity or turn outright undecidable. In this talk we present the different
-shapes imperfect information takes in multi-agents systems, some well-known (partial observation of the state space) and some less famous (strategies dependencies during synthesis, delayed use). We
-will present recent algorithm developments and new complexity results.
+<p style="width: 800px" align="left"><a name="YuxiFu" id="ogata"></a><strong>Title</strong>:  Proof Script Generation from Proof Scores
+ (Kazuhiro Ogata)<br>
+<strong>Abstract</strong>: CafeOBJ is an algebraic specification language and
+processor. Various kinds of systems, such as security protocols,
+have been formally specified in CafeOBJ and formally verified by
+writing proof scores in CafeOBJ. Proof scores are proof plans
+manually written by human users and subject to human errors in
+that human users may overlook some cases, which CafeOBJ does not
+take care of. The 1st implementation of CafeOBJ is done in Common
+Lisp. There is the 2nd implementation called CafeInMaude on top
+of Maude, which is a sibling language of CafeOBJ. CafeInMaude has
+a proof assistant called CafeInMaude Proof Assistant (CiMPA) and
+a proof generator called CafeInMaude Proof
+Generator (CiMPG). Given proof scores written in CafeOBJ, CiMPG
+automatically generates proof scripts that can be fed into
+CiMPA. If the generated proof scripts can be discharged by CiMPA,
+the proof scores are correct. Thus, CiMPG can check if proof
+scores are correct.  An example is used to describe how to write
+systems specifications in CafeOBJ, how to write proof scores in
+CafeOBJ and how to use CiMPA and CiMPG.
 </p>
 <hr>
 <p style="width: 800px" align="left"><a name="YuxiFu" id="chen"></a><strong>Title</strong>: Łoś and Tarski meet Lovász (Yijia Chen)<br>
