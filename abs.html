@@ -93,23 +93,13 @@ original program, and that inversion correctly restores the initial program stat
 (Joint work with: James Hoey and Irek Ulidowski)</p>
 <hr>
 <p style="width: 800px" align="left"><a name="YuxiFu" id="song"></a><strong>Title</strong>: Formal Verification of Software Countermeasures   (Fu Song) <br>
-<strong>Abstract</strong>: Power side-channel attacks, capable of deducing secret data using statistical analysis, have become a serious
-threat. Random masking is a widely used countermeasure for removing the statistical dependence between
-secret data and side-channel information. Although there are techniques for verifying whether a software
-has been perfectly masked, they are limited in accuracy and scalability. To bridge this gap, we propose a
-refinement-based method for verifying masking. Our method is more accurate than prior type inference based
-approaches and more scalable than prior model-counting based approaches using SAT or SMT solvers. Indeed,
-our approach can be viewed as a gradual refinement of a set of type inference rules for reasoning about
-distribution types. These rules are kept abstract initially to allow fast deduction, and then made concrete when
-the abstract version is not able to resolve the verification problem. We also propose algorithms for quantifying
-the amount of information leakage from a software implementation through side channels using the notion of
-Quantitative Masking Strength. We have implemented our method in a tool and evaluated it on cryptographic
-benchmarks including AES and MAC-Keccak. The experimental results show that our method significantly
-outperforms state-of-the-art techniques in terms of both accuracy and scalability.</p>
+<strong>Abstract</strong>:  Cryptographic algorithms are widely used to protect data privacy in many aspects of our daily lives from smart card to cyber-physical systems. Unfortunately, programs implementing cryptographic algorithms may be vulnerable to practical power side-channel attacks, which infer private data via statistical analysis of the correlation between power consumptions of an electronic device and private data. To thwart these attacks, several masking schemes have been proposed, giving rise to effective countermeasures for reducing the statistical correlation between private data and power consumptions. However, programs that rely on secure masking schemes are not secure a priori. Indeed, designing effective masking programs is a labor intensive and error-prone task. Although some techniques have been proposed for formally verifying masking countermeasures and for quantifying masking strength, they are currently limited to Boolean programs and suffer from low accuracy.
+ <br><br>
+In this talk, I will present our recent results on formal verification of cryptographic programs against power side-channel attacks. First, I will talk about a refinement based qualitative verification approach that can be viewed as a synergistic integration of a rule-based approach for inferring distribution types and an model-counting based approach for refining these types. Second, I will present an algorithm for quantifying the amount of side-channel information leakage from a software implementation using the notion of quantitative masking strength. Finally, I will discuss some open problems for future work.</p>
 <hr>
 <p style="width: 800px" align="left"><a name="YuxiFu" id="zhangmin"></a><strong>Title</strong>: Modeling and Verifying Uncertainty-Aware Timing Behaviors using Parametric Logical Time Constraint (Min Zhang) <br>
 <strong>Abstract</strong>: The Clock Constraint Specification Language (CCSL) is a logical time based modeling language to formalize
-timing behaviors of real-time and embedded systems. However, it cannot capture timing behaviors that contain uncertainties, e.g., uncertainty in execution time and period. This limits the application of the language to real-world systems, as uncertainty often exists in practice due to both internal and external factors. To capture uncertainties in timing behaviors, in this talk we extend CCSL by introducing parameters into constraints.
+timing behaviors of real-time and embedded systems. However, it cannot capture timing behaviors that contain uncertainties, e.g., uncertainty in execution time and period. This limits the application of the language to real-world systems, as uncertainty often exists in practice due to both internal and external factors. To capture uncertainties in timing behaviors, in this talk we will show how to extend CCSL by introducing parameters into constraints.
 We then propose an approach to transform parametric CCSL constraints into SMT formulas for efficient verification. We apply our approach to an industrial case which is proposed as the FMTV (Formal Methods for Timing Verification) Challenge in 2015, which shows that timing behaviors with uncertainties can be effectively modeled and verified using the parametric CCSL. 
 <br>
 <br>
